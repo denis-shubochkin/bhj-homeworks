@@ -2,8 +2,8 @@
 let deadCounter = document.getElementById("dead");
 let lostCounter = document.getElementById("lost"); 
 
-const timer = setInterval( function() {
-    for (let index = 1; index++; index <= 9 )
+
+    for (let index = 1; index <= 9; index++)
     {   
         const curEl = document.getElementById(`hole${index}`);
         function clickAction()  
@@ -20,4 +20,4 @@ const timer = setInterval( function() {
        // if (index === 10 && curEl.onclick === null) {break;}
         curEl.onclick = clickAction
     }
-},800);                
+                
