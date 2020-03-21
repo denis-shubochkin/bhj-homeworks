@@ -1,6 +1,7 @@
 function addTask(event) 
 {   
-        if (taskInput.value != '')
+    event.preventDefault();    
+    if (taskInput.value != '')
         {
             taskList.insertAdjacentHTML('beforeEnd', 
                 `<div class="task" id ="${count}">
